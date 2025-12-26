@@ -1,0 +1,12 @@
+.custom-showall {
+    cursor: pointer;
+    &__text {
+        font-size: 16px;
+        color: #6996FF;
+        font-weight: 500;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            color: rgb(71, 105, 184);
+        }
+    }
+}

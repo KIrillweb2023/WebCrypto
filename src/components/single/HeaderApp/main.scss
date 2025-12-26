@@ -1,0 +1,88 @@
+.app {
+    &-main {
+        &-header {
+            width: 100%;
+            background: rgb(0, 0, 0, 0.5);
+            border-radius: 10px;
+            border: 1px solid rgb(255, 255, 255, 0.2);
+            height: auto;
+            padding: 20px 10px;
+
+            &__wrapper {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                padding: 0 30px;
+            }
+
+            &__text {
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                &_title {
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+
+            &__attributes {
+                display: flex;
+                column-gap: 15px;
+
+                &_status {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                    .state {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 100px;
+                        background-color: #359700;
+                    }
+                    .status-text {
+                       font-size: 16px;
+                       font-weight: 500;
+                        color: #359700;
+                    }
+                }
+                
+
+                &_profit {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                    border-radius: 10px;
+                    border: 1px solid #80808052;
+                    padding: 10px 15px;
+                    background-color: #00000000;
+                    cursor: pointer;
+                    .profit {
+                        &-text {
+                            color: #808080;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                &_onoff {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                    border-radius: 10px;
+                    border: 1px solid #80808052;
+                    padding: 10px 15px;
+                    background-color: #00000000;
+                    cursor: pointer;
+                    .onoff {
+                        &-text {
+                            color: #808080;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

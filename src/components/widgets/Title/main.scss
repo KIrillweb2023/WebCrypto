@@ -1,0 +1,26 @@
+.custom-title {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    &__text {
+        color: #fff;
+        font-weight: 20px;
+        font-weight: 500    ;
+    }
+
+    &__count {
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_text {
+            color: #000;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import "../../../styles/utils/mixins";
+
+
+.app {
+    &-main {
+        &-field {
+            &__other {
+                &_notify {
+                    @include main-style-board;
+                    height: 45%;
+                }
+            }
+        }
+    }
+}

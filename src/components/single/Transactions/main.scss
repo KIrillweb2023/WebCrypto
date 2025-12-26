@@ -1,0 +1,156 @@
+@import "../../../styles/utils/mixins";
+
+.app {
+    &-main {
+        &-field {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            column-gap: 15px;
+            &__transaction {
+                @include main-style-board;
+                height: 100%;
+                width: 65%;
+
+                &_head {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                &_values {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    column-gap: 10px;
+                    &-item {
+                        background: rgb(255, 255, 255, 0.05);
+                        border-radius: 5px;
+                        padding: 10px 10px;
+                        width: 45%;
+                    }
+                    .item-name {
+                        width: 10%;
+                    }
+
+                    &-text {
+                        color: #ffffff8c;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+                }
+
+                &_deals {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 10px;
+                    row-gap: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    &-item {
+                        display: flex;
+                        width: 100%;
+                        height: auto;
+                        justify-content: space-between;
+                        column-gap: 10px;
+                        &-block {
+                            display: flex;
+                            background: rgb(255, 255, 255, 0.05);
+                            border-radius: 5px;
+                            padding: 5px 20px;
+                            width: 45%;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        .block{
+                            &-buyIndex {
+                                display: flex;
+                                align-items: center;
+                                column-gap: 15px;
+                                &-icon {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+
+                                &-text {
+                                    &__name {
+                                        color: #ffffff;
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                    }
+                                    &__lastname {
+                                        color: #ffffff85;
+                                        font-weight: 600;
+                                        font-size: 12px;
+                                        text-transform: uppercase;
+                                        margin-top: 5px;
+                                        letter-spacing: 2px;
+                                    }
+                                }
+                            }
+
+                            &-info {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+                                row-gap: 5px;
+                                &-prozent {
+                                    display: flex;
+                                    column-gap: 5px;
+                                    
+                                    border-radius: 25px;
+                                    padding: 5px 10px;
+                                    &__text {
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                    }
+                                }
+
+                                &-price {
+                                    font-size: 16px;
+                                    color: #ffffff;
+                                    font-weight: 500;
+                                }
+                                .prozent-down {
+                                    background-color: #402A2A;
+                                    p {
+                                        color: #FF6767;
+                                    }
+                                }
+                                .prozent-up {
+                                    background-color: #2A4037;
+                                    p {
+                                        color: #07F8B5;
+                                    }
+                                }
+                            }
+
+                            &-name {
+                                width: 10%;
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 5px;
+                                justify-content: center;
+                                align-items: center;
+                                &-icon {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+
+                                &-text {
+                                    color: #808080;
+                                    margin-top: 5px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
