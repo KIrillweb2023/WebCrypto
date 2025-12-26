@@ -76,6 +76,12 @@
                     img {
                         fill: #fff;
                     }
+
+                    svg {
+                        path {
+                            fill: #FF5000;
+                        }
+                    }
                 }
                 &_link {
                     display: flex;

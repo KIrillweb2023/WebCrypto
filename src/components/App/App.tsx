@@ -1,9 +1,11 @@
+import { Route, Routes } from 'react-router-dom'
 import { Aside } from '../single/Aside'
 import { Exchanges } from '../single/Exchanges'
 import { HeaderApp } from '../single/HeaderApp'
 import { Notify } from '../single/Notify'
-import { Transactions } from '../single/Transactions'
 import './App.scss'
+import { TransactionPage } from '../../pages/TransactionPage'
+import { AccauntPage } from '../../pages/AccauntPage'
 
 export const App = () => {
   return (
@@ -14,7 +16,10 @@ export const App = () => {
           <div className="app-main">
             <HeaderApp/>
             <div className="app-main-field">
-                <Transactions/>
+                <Routes>
+                  <Route path={'/'} element={<TransactionPage/>}/>
+                  <Route path={'/accaunt'} element={<AccauntPage/>}/>
+                </Routes>
                 <div className="app-main-field__other">
                   <Exchanges/>
                   <Notify/>
